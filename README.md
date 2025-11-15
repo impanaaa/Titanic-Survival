@@ -7,9 +7,9 @@ I analyzed the Titanic dataset to understand which passenger features affected s
 ## What I Did in This Project
 Loaded the dataset and explored the first few rows and statistical summary to understand the data.
 
-Handled missing values by filling Age and Fare with the median, filling Embarked with the mode, and dropping the Cabin column due to too many missing values.
+- **Handled missing values by filling Age and Fare with the median, filling Embarked with the mode, and dropping the Cabin column due to too many missing values.
 
-Converted categorical columns: mapped Sex to numeric values and created dummy variables for Embarked.
+- **Converted categorical columns: mapped Sex to numeric values and created dummy variables for Embarked.
 
 Selected important features such as Pclass, Sex, Age, Fare, SibSp, Parch, Embarked_Q, Embarked_S.
 
