@@ -1,34 +1,39 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/impanaaa/Titanic-Survival/blob/main/TitanicSurvival.ipynb)
 
 Titanic Survival — Project Summary
-I analyzed the Titanic dataset (titanic.csv) to find which passenger features affected survival and to build a model that predicts survival. I focused on clean, clear steps: prepare the data, explore it with visuals, train a model, and evaluate results.
 
-Key actions I took
+I analyzed the Titanic dataset to understand which passenger features affected survival and to build a simple machine learning model that predicts whether a person would survive. The project mainly focuses on data cleaning, visual exploration, feature preparation, and model training using Logistic Regression. Everything is done step by step in a clear and structured way.
 
-Loaded the data from titanic.csv and inspected the first rows and summary statistics.
+What I Did in This Project
+Loaded the dataset and explored the first few rows and statistical summary to understand the data.
 
-Handled missing values: filled Age and Fare with the median, filled Embarked with the mode, and dropped the Cabin column because it had too many missing values.
+Handled missing values by filling Age and Fare with the median, filling Embarked with the mode, and dropping the Cabin column due to too many missing values.
 
-Converted categories: mapped Sex to numbers and created dummy variables for Embarked.
+Converted categorical columns: mapped Sex to numeric values and created dummy variables for Embarked.
 
-Selected features: used Pclass, Sex, Age, Fare, SibSp, Parch, Embarked_Q, Embarked_S for the model.
+Selected important features such as Pclass, Sex, Age, Fare, SibSp, Parch, Embarked_Q, Embarked_S.
 
-Train-test split: split data with test_size=0.2 and random_state=42.
+Split the data into training and testing sets (80/20 split) and scaled the features using StandardScaler.
 
-Scaled features using StandardScaler before modeling.
+Created multiple visualizations (histograms, countplots, bar plots) to see how survival varies by gender, passenger class, and other features.
 
-Visualized data with histograms, countplots, and bar plots to compare survival by gender and passenger class, and to inspect distributions and relationships.
+Trained a Logistic Regression model to predict survival based on the selected features.
 
-Trained a Logistic Regression model on the prepared data.
+Evaluated the model using accuracy, confusion matrix, and classification report to understand how well the model performs.
 
-Evaluated the model with accuracy, confusion matrix, and classification report.
+Added a small prediction section where I tested the model with a new passenger’s details to see if they would survive.
 
-Added a small prediction demo to predict survival for a new/specific passenger using the trained model.
-
-Libraries used
-
+Libraries Used
 pandas, numpy
 
-matplotlib.pyplot, seaborn (visualizations)
+matplotlib.pyplot, seaborn
 
-scikit-learn: train_test_split, StandardScaler, LogisticRegression, accuracy_score, confusion_matrix, classification_report
+scikit-learn
+
+train_test_split
+
+StandardScaler
+
+LogisticRegression
+
+accuracy_score, confusion_matrix, classification_report
